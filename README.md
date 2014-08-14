@@ -30,13 +30,14 @@ on feedback from anyone willing to look the project over.
 
 deployment
 ----------
-VETS includes a copy of bottle.py in vendor/ that is known to work
-(though it is likely newer versions also work). All you should need
-on a machine is [Python](https://www.python.org/) 2.5+ and possibly
-[sqlite3](http://www.sqlite.org/), but only if you want to be
-able to query/edit the database outside of the application using the
-sqlite3 command-line tool.
+All you should need on a machine is [Python](https://www.python.org/) 2.5+,
+[bottle](http://bottlepy.org/docs/dev/index.html), and possibly
+[sqlite3](http://www.sqlite.org/), but only if you want to be able to
+query/edit the database outside of the application using the sqlite3
+command-line tool.
 
+* To install `bottle`:
+  * `pip install -r requirements.txt`
 * To initialize the database
   * `db/init_db.py -c db/development.sqlite3`
 * To start the server

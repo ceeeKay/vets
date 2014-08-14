@@ -13,7 +13,7 @@ __version__ = '0.06-dev'
 __license__ = 'MIT'
 
 import os, re, sqlite3, datetime
-from vendor.bottle import route, run, template, get, post, request, error, install, static_file, response
+from bottle import route, run, template, get, post, request, error, install, static_file, response
 
 #Database settings
 conn = sqlite3.connect("db/development.sqlite3")
